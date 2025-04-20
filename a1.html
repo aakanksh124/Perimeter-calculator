@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Perimeter Calculator</h1>
+
+    <script>
+         choice = prompt("1. Perimeter of Rectangle \n2. Perimeter of Triangle \n3. Perimeter of Circle \n4. Perimeter of Parrallelogram")
+        if (choice == "1") {
+            var l = prompt ("Enter the length")
+            var w = prompt ("Enter the width")
+            var perimeter = 2 * Number(l) * Number(w)
+            alert ("The perimeter of rectangle is" + perimeter)
+        }
+        else if (choice == "2") {
+            var a = prompt ("Enter the first side's lenght")
+            var b = prompt ("Enter the second side's lenght")
+            var c = prompt ("Enter the third side's lenght")
+            var perimeter = Number(a) + Number(b) + Number(c)
+            alert ("The perimeter of triangle is" + perimeter)
+        }
+        else if (choice == "3") {
+            var r = prompt ("Enter the radius")
+            
+            var perimeter = 2 * 22/7 * Number(r)
+            alert ("The perimeter of circle is" + perimeter)
+        }
+        else if (choice == "4") {
+            var b = prompt ("Enter first side's length")
+            var h = prompt ("Enter second side's length")
+            var k = prompt ("Enter third side's length")
+            var e = prompt ("Enter fourth side's length")
+            var perimeter = Number(b) + Number(h) + Number(k) + Number(e)
+            alert ("The perimeter of parrellelogram is" + perimeter)
+        }
+    </script>
+</body>
+</html>
